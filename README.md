@@ -10,10 +10,12 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 
 ### Vstupy
 * Start/Stop - spuštění stopky, zastavení stopek
-* RST - vynulování 
-* Lap - uložení aktuálního času
+* RST - úplné vynulování 
+* Lap_sv - uložení aktuálního času
 * Lap_sw - přepínání mezi zobrazením stopek a uložených časů
 
 ### Výstupy
 - zobrazení aktuálního času stopek
 - zobrazení uloženého času
+
+### Blokový diagram
