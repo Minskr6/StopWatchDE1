@@ -20,3 +20,6 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 
 ### Blokový diagram
 ![diagram](diagram3.png)
+
+### Testbench pro Counter core
+![testbenchcore](testbench pro counter_core.png)
