@@ -19,4 +19,4 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 - zobrazení uloženého času
 
 ### Blokový diagram
-![diagram](diagram.png)
+![diagram](diagram2.png)
