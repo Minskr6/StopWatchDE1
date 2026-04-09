@@ -22,4 +22,4 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 ![diagram](diagram3.png)
 
 ### Testbench pro Counter core
-![testbenchcore](testbench pro counter_core.png)
+![tb_counter_core](tb_counter_core.png)
