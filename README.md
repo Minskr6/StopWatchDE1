@@ -1,5 +1,5 @@
 # Projekt StopWatch
-Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností zobrazení uloženého času z paměti, bude potřeba využití děličky z 100Mhz na 100Hz. 
+Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností přepnutí na zobrazení uloženého času v paměti.
 
 
 ## Spolupracovali:
