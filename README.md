@@ -19,7 +19,7 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 - zobrazení uloženého času
 
 ### Blokový diagram
-![diagram](diagram3.png)
+![diagram](diagram4.png)
 
 ### Testbench pro Counter_core
 ![tb_counter_core](tb_counter_core.png)
