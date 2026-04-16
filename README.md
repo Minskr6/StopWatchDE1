@@ -28,3 +28,4 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 ![tb_lap brain](tb_lap_brain.png)
 
 ### Testbench pro Display_driver
+![tb_display driver](tb_display_driver.png)
