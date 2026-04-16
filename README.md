@@ -1,5 +1,5 @@
 # Projekt StopWatch
-Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností přepnutí na zobrazení uloženého času v paměti.
+Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností  uložení času a následného přepnutí na zobrazení tohoto uloženého času.
 
 
 ## Spolupracovali:
@@ -9,10 +9,10 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 * Tvarůžek Tomáš
 
 ### Vstupy
-* Start/Stop - spuštění stopky, zastavení stopek
-* RST - úplné vynulování 
-* Lap_sv - uložení aktuálního času
-* Lap_sw - přepínání mezi zobrazením stopek a uložených časů
+* BTND (Start/Stop) - spuštění nebo zastavení stopek
+* BTNC - úplné vynulování 
+* BTNU - uložení aktuálního času
+* SW[0] - přepínání mezi zobrazením aktuálního času a uloženým časem
 
 ### Výstupy
 - zobrazení aktuálního času stopek
@@ -21,5 +21,9 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 ### Blokový diagram
 ![diagram](diagram3.png)
 
-### Testbench pro Counter core
+### Testbench pro Counter_core
 ![tb_counter_core](tb_counter_core.png)
+
+### Testbench pro Lap_brain
+
+### Testbench pro Display_driver
