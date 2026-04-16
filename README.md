@@ -22,7 +22,7 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 ![diagram](diagram4.png)
 
 ### Testbench pro Counter_core
-![tb_counter_core](imagines/tb_counter_core.png)
+![tb_counter_core](images/tb_counter_core.png)
 
 ### Testbench pro Lap_brain
 ![tb_lap brain](tb_lap_brain.png)
