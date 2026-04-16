@@ -19,13 +19,13 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 - zobrazení uloženého času
 
 ### Blokový diagram
-![diagram](diagram4.png)
+![diagram](images/diagram4.png)
 
 ### Testbench pro Counter_core
 ![tb_counter_core](images/tb_counter_core.png)
 
 ### Testbench pro Lap_brain
-![tb_lap brain](tb_lap_brain.png)
+![tb_lap brain](images/tb_lap_brain.png)
 
 ### Testbench pro Display_driver
-![tb_display driver](tb_display_driver.png)
+![tb_display driver](images/tb_display_driver.png)
