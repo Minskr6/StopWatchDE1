@@ -25,5 +25,6 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 ![tb_counter_core](tb_counter_core.png)
 
 ### Testbench pro Lap_brain
+![tb_lap brain](tb_lap_brain.png)
 
 ### Testbench pro Display_driver
