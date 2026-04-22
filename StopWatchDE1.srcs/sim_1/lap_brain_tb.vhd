@@ -15,7 +15,7 @@ architecture tb of tb_lap_brain is
         port (clk       : in std_logic;
               rst       : in std_logic;
               lap_time  : in std_logic;
-              lap_mem   : in std_logic;
+              lap_mem   : in std_logic_vector(5 downto 0);
               h_set_in  : in std_logic_vector (3 downto 0);
               t_set_in  : in std_logic_vector (3 downto 0);
               u_sec_in  : in std_logic_vector (3 downto 0);
@@ -33,7 +33,7 @@ architecture tb of tb_lap_brain is
     signal clk       : std_logic;
     signal rst       : std_logic;
     signal lap_time  : std_logic;
-    signal lap_mem   : std_logic;
+    signal lap_mem   : std_logic_vector(5 downto 0);
     signal h_set_in  : std_logic_vector (3 downto 0);
     signal t_set_in  : std_logic_vector (3 downto 0);
     signal u_sec_in  : std_logic_vector (3 downto 0);
@@ -79,9 +79,8 @@ begin
 
     stimuli : process
     begin
-
         lap_time <= '0';
-        lap_mem  <= '0';
+        lap_mem  <= "000000";
         h_set_in <= "0000";
         t_set_in <= "0000";
         u_sec_in <= "0000";
@@ -102,24 +101,43 @@ begin
         h_set_in <= "0110"; -- 6
         wait for 5 * TbPeriod;
 
-
+        -- slot 0 první mezičas
         lap_time <= '1';
         wait for TbPeriod;
         lap_time <= '0';
         wait for 5 * TbPeriod;
 
-
-        u_sec_in <= "0101"; -- 5
+        t_sec_in <= "0100"; -- 4
+        u_sec_in <= "0000"; -- 0
         t_set_in <= "0000"; -- 0
         h_set_in <= "0000"; -- 0
         wait for 5 * TbPeriod;
 
+        -- slot 1 druhý mezičas
+        lap_time <= '1';
+        wait for TbPeriod;
+        lap_time <= '0';
+        wait for 5 * TbPeriod;
 
-        lap_mem <= '1';
+        u_sec_in <= "0101"; -- 5
+        t_set_in <= "1001"; -- 9
+        h_set_in <= "1001"; -- 9
+        wait for 5 * TbPeriod;
+        
+        -- zobrazit slot 0
+        lap_mem <= "000001"; 
         wait for 10 * TbPeriod;
 
+        -- zobrazit slot 1
+        lap_mem <= "000010"; 
+        wait for 10 * TbPeriod;
 
-        lap_mem <= '0';
+        -- zobrazit slot 2
+        lap_mem <= "000100"; 
+        wait for 10 * TbPeriod;
+
+        -- živý čas
+        lap_mem <= "000000"; 
         wait for 10 * TbPeriod;
 
         TbSimEnded <= '1';
