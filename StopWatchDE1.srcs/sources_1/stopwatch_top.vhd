@@ -7,7 +7,7 @@ entity stopwatch_top is
         btnc  : in  std_logic;                     -- Tlačítko Reset
         btnu  : in  std_logic;                     -- Tlačítko Lap/Mezičas 
         btnd  : in  std_logic;                     -- Tlačítko Start/Stop
-        sw    : in  std_logic_vector(15 downto 0); 
+        sw    : in  std_logic_vector(5 downto 0); 
         
         seg   : out std_logic_vector(6 downto 0);  
         dp    : out std_logic;                     
@@ -57,7 +57,7 @@ architecture structural of stopwatch_top is
             clk       : in std_logic; 
             rst       : in std_logic; 
             lap_time  : in std_logic; 
-            lap_mem   : in std_logic; 
+            lap_mem   : in std_logic_vector(5 downto 0);
             h_set_in  : in std_logic_vector(3 downto 0); 
             t_set_in  : in std_logic_vector(3 downto 0); 
             u_sec_in  : in std_logic_vector(3 downto 0); 
@@ -187,7 +187,7 @@ begin
             clk       => clk, 
             rst       => sig_rst_clean, 
             lap_time  => sig_lap_pulse, 
-            lap_mem   => sw(0),      -- Zatím poue sw0
+            lap_mem   => sw,      -- Zatím poue sw0
             h_set_in  => sig_live_h_set, 
             t_set_in  => sig_live_t_set, 
             u_sec_in  => sig_live_u_sec, 
