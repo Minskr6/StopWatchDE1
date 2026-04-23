@@ -1,10 +1,25 @@
+----------------------------------------------------------------------------------
+-- Název projektu: StopWatch (Digitální stopky)
+-- Soubor:  counter_core.vhd
+-- Autor:   Tvarůžek Tomáš
+-- Deska:   FPGA Nexys A7 50T
+--
+-- Popis: 
+-- Modul tvoří jádro stopek a zajišťuje čítání času v BCD formátu.
+-- 1. Kaskádní propojení 6 čítačů pomocí signálů 'ceo' (Clock Enable Out).
+-- 2. Čítání setin sekundy, sekund a minut na základě vstupního povolení 'ce'.
+-- 3. Rozlišení desítkové (0-9) a šedesátkové (0-5) soustavy pro správný formát času.
+-- 4. Synchronní reset 'rst', který vynuluje všechny čítače najednou.
+----------------------------------------------------------------------------------
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity counter_core is
-    Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
-           ce : in STD_LOGIC;
+    Port ( clk   : in STD_LOGIC;
+           rst   : in STD_LOGIC;
+           ce    : in STD_LOGIC;
            h_set : out STD_LOGIC_VECTOR (3 downto 0);
            t_set : out STD_LOGIC_VECTOR (3 downto 0);
            u_sec : out STD_LOGIC_VECTOR (3 downto 0);
@@ -38,7 +53,7 @@ begin
         port map(
             clk => clk,
             rst => rst,
-            en => ce,
+            en  => ce,
             cnt => h_set,
             ceo => sig_ceo0
             );
@@ -49,7 +64,7 @@ begin
         port map(
             clk => clk, 
             rst => rst, 
-            en => sig_ceo0,
+            en  => sig_ceo0,
             cnt => t_set, 
             ceo => sig_ceo1
             );
@@ -59,7 +74,7 @@ begin
         port map(
             clk => clk, 
             rst => rst, 
-            en => sig_ceo1,
+            en  => sig_ceo1,
             cnt => u_sec, 
             ceo => sig_ceo2
             );
@@ -68,7 +83,7 @@ begin
         generic map(G_MAX => 5, G_BITS => 4)
         port map(clk => clk, 
             rst => rst, 
-            en => sig_ceo2, 
+            en  => sig_ceo2, 
             cnt => t_sec, 
             ceo => sig_ceo3
             );
@@ -78,7 +93,7 @@ begin
         port map(
             clk => clk, 
             rst => rst, 
-            en => sig_ceo3, 
+            en  => sig_ceo3, 
             cnt => u_min, 
             ceo => sig_ceo4
             );
@@ -88,7 +103,7 @@ begin
         port map(
             clk => clk, 
             rst => rst, 
-            en => sig_ceo4, 
+            en  => sig_ceo4, 
             cnt => t_min, 
             ceo => open
             );
