@@ -6,7 +6,7 @@
 --
 -- Popis: 
 -- Modul tvoří jádro stopek a zajišťuje čítání času v BCD formátu.
--- 1. Kaskádní propojení 6 čítačů pomocí signálů 'ceo' (Clock Enable Out).
+-- 1. Kaskádové propojení 6 čítačů pomocí signálů 'ceo' (Clock Enable Out).
 -- 2. Čítání setin sekundy, sekund a minut na základě vstupního povolení 'ce'.
 -- 3. Rozlišení desítkové (0-9) a šedesátkové (0-5) soustavy pro správný formát času.
 -- 4. Synchronní reset 'rst', který vynuluje všechny čítače najednou.
