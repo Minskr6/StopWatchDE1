@@ -1,3 +1,19 @@
+----------------------------------------------------------------------------------
+--  Název projektu: StopWatch (Digitální stopky)
+-- Název souboru:   display_driver.vhd
+-- Autor:           Vocilka Jiří
+-- Deska:           FPGA Nexys A7 50T
+--
+-- Popis: 
+-- Modul pro řízení 7-segmentového displeje metodou časového multiplexu.
+-- 1. Čítač (sig_digit) přepíná mezi 6 aktivními pozicemi na displeji frekvencí 1 kHz.
+-- 2. Multiplexor vybírá odpovídající vstupní data (setiny, sekundy, minuty)
+--    a aktivuje příslušnou anodu (aktivní v log. 0).
+-- 3. Tečky (dp) jsou nastaveny napevno tak, aby oddělovaly setiny od sekund a sekundy od minut.
+-- 4. Pro převod čísel na segmenty je použit dříve vytvořený modul 'bin2seg'.
+----------------------------------------------------------------------------------
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
