@@ -11,7 +11,7 @@
 -- 2. Reset: Signál 'rst' vynuluje ukazatel slotu i všechny uložené časy.
 -- 3. Výběr: Multiplexor na výstupu zobrazuje uložený mezičas na základě 
 --    jednobitového výběru v 'lap_mem'. Pokud není 
---    zvolen žádný mezičas, propouští na výstup aktuální hodnoty (bypass).
+--    zvolen žádný mezičas, propouští na výstup aktuální hodnoty.
 ----------------------------------------------------------------------------------
 
 library ieee;
