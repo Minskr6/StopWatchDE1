@@ -1,13 +1,19 @@
 ----------------------------------------------------------------------------------
--- Název projektu: StopWatch
+-- Název projektu: StopWatch (Digitální stopky)
 -- Název souboru:  lap_brain.vhd
--- Autor:          [Tvarůžek Tomáš]
+-- Autor:          Tvarůžek Tomáš
 -- Cíl (Target):   FPGA Nexys A7 50T
 --
 -- Popis: 
--- Převodník binárního vstupu (4 bity) na 7-segmentový displej (hexadecimální).
--- Výstupy (seg) odpovídají segmentům a-g, aktivní v log. 0 (společná anoda).
+-- Logický modul pro správu mezičasů (Lap Memory).
+-- 1. Ukládání: Při aktivaci 'lap_time' uloží aktuální hodnoty z '_in' portů 
+--    do vnitřních registrů (celkem 6 paměťových slotů, cyklicky přepínaných).
+-- 2. Reset: Signál 'rst' vynuluje ukazatel slotu i všechny uložené časy.
+-- 3. Výběr: Multiplexor na výstupu zobrazuje uložený mezičas na základě 
+--    jednobitového výběru v 'lap_mem' (one-hot kódování). Pokud není 
+--    zvolen žádný mezičas, propouští na výstup aktuální hodnoty (bypass).
 ----------------------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
