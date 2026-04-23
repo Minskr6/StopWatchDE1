@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Název projektu: StopWatch Digitální stopky 
+-- Název projektu: StopWatch (Digitální stopky) 
 -- Název souboru:  stopwatch_top.vhd
 -- Autor:          Truong Hong Minh
 -- Deska:          FPGA Nexys A7 50T
@@ -15,6 +15,7 @@
 -- Ovládání: BTNC resetuje vše, BTND funguje jako Start/Stop a BTNU ukládá 
 -- aktuální mezičas. Přepínače SW vybírají mezičasy pro zobrazení na displeji.
 ----------------------------------------------------------------------------------
+
 
 library ieee;
 use ieee.std_logic_1164.all;
