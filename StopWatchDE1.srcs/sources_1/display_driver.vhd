@@ -23,14 +23,12 @@ entity display_driver is
            clk       : in  std_logic;
            rst       : in  std_logic;
            ce_1khz   : in  std_logic;
-           
            h_set_in  : in  std_logic_vector (3 downto 0);
            t_set_in  : in  std_logic_vector (3 downto 0);
            u_sec_in  : in  std_logic_vector (3 downto 0);
            t_sec_in  : in  std_logic_vector (3 downto 0);
            u_min_in  : in  std_logic_vector (3 downto 0);
            t_min_in  : in  std_logic_vector (3 downto 0);
-           
            seg       : out std_logic_vector (6 downto 0);
            dp        : out std_logic;                     
            anode     : out std_logic_vector (7 downto 0)
@@ -70,24 +68,24 @@ begin
         anode   <= "11111111";
 
         case sig_digit is
-            when "000" =>
+            when "000"  =>
                 sig_bin <= h_set_in;
                 anode   <= "11111110";
-            when "001" =>
+            when "001"  =>
                 sig_bin <= t_set_in;
                 anode   <= "11111101";
-            when "010" =>
+            when "010"  =>
                 sig_bin <= u_sec_in;
                 dp      <= '0';
                 anode   <= "11111011";
-            when "011" =>
+            when "011"  =>
                 sig_bin <= t_sec_in;
                 anode   <= "11110111";
-            when "100" =>
+            when "100"  =>
                 sig_bin <= u_min_in;
                 dp      <= '0';
                 anode   <= "11101111";
-            when "101" =>
+            when "101"  =>
                 sig_bin <= t_min_in;
                 anode   <= "11011111";
             when others =>
