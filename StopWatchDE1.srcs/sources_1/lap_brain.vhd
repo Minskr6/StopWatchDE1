@@ -2,7 +2,7 @@
 -- Název projektu: StopWatch (Digitální stopky)
 -- Název souboru:  lap_brain.vhd
 -- Autor:          Tvarůžek Tomáš
--- Cíl (Target):   FPGA Nexys A7 50T
+-- Deska:          FPGA Nexys A7 50T
 --
 -- Popis: 
 -- Logický modul pro správu mezičasů (Lap Memory).
