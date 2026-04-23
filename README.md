@@ -19,7 +19,7 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas s možností u
 - zobrazení uložených časů
 
 ### Blokový diagram
-![diagram](images/diagram4.png)
+![diagram](images/Diagram.png)
 ## Popisy bloků:
 
 ---
