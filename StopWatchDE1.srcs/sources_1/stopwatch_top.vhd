@@ -1,3 +1,20 @@
+----------------------------------------------------------------------------------
+-- Název projektu:: StopWatch Digitální stopky 
+-- Název souboru:  stopwatch_top.vhd
+-- Autor:   Truong Hong Minh
+-- Deska:   FPGA Nexys A7 50T
+--
+-- Popis: 
+-- Toto je hlavní (top) modul celého projektu stopek. Propojuje jednotlivé části:
+-- 1. Debounce: Ošetření zákmitů tlačítek (Reset, Start/Stop, Lap).
+-- 2. Clk_en: Generování hodinových impulsů pro 100 Hz (měření) a 1 kHz (displej).
+-- 3. Counter_core: Samotné počítání času (setiny, sekundy, minuty).
+-- 4. Lap_brain: Logika pro ukládání a prohlížení mezičasů pomocí přepínačů.
+-- 5. Display_driver: Řízení 7-segmentového displeje (multiplexing).
+--
+-- Ovládání: BTNC resetuje vše, BTND funguje jako Start/Stop a BTNU ukládá 
+-- aktuální mezičas. Přepínače SW vybírají mezičasy pro zobrazení na displeji.
+----------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 
