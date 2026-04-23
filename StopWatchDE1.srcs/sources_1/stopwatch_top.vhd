@@ -1,8 +1,8 @@
 ----------------------------------------------------------------------------------
--- Název projektu:: StopWatch Digitální stopky 
+-- Název projektu: StopWatch Digitální stopky 
 -- Název souboru:  stopwatch_top.vhd
--- Autor:   Truong Hong Minh
--- Deska:   FPGA Nexys A7 50T
+-- Autor:          Truong Hong Minh
+-- Deska:          FPGA Nexys A7 50T
 --
 -- Popis: 
 -- Toto je hlavní (top) modul celého projektu stopek. Propojuje jednotlivé části:
