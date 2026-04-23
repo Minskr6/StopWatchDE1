@@ -18,6 +18,16 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas s možností u
 - zobrazení aktuálního času stopek
 - zobrazení uložených časů
 
+### Použitý Hardware a Software
+
+Projekt je navržen pro vývojovou desku **Nexys A7-50T**.
+
+* Vývojová deska: Digilent Nexys A7-50T (FPGA Artix-7)
+* Vývojové prostředí: Xilinx Vivado
+* Jazyk popisu hardwaru: VHDL
+
+---
+
 ### Blokový diagram
 ![diagram](images/Diagram.png)
 ## Popisy bloků:
@@ -57,3 +67,6 @@ Převádí signály z lap_brain na šest 7segmentových displejů, které se vel
 
 #### Display_driver testbench
 ![tb_display_driver](images/tb_display_driver.png)
+
+### Resource Report 
+![LUT_tabulka](images/LUT_tabulka.png)
