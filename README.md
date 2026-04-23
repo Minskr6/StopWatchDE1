@@ -20,24 +20,37 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 
 ### Blokový diagram
 ![diagram](images/diagram4.png)
+## Popisy bloků:
 
-### 1. Counter - ([Counter_core](StopWatchDE1.srcs/sources_1/counter_core.vhd))
 ---
-popis
----
+
+### 1. Counter_core - ([Counter_core](StopWatchDE1.srcs/sources_1/counter_core.vhd))
+
+--- 
+
+semppopis
+
 ### Counter_core testbench
 ![tb_counter_core](images/tb_counter_core.png)
 
+---
+
 ### 2. Lap Brain - ([Lap_brain](StopWatchDE1.srcs/sources_1/lap_brain.vhd))
+
 ---
-popis
----
+
+semppopis
+
 ### Lap_Brain testbench
 ![tb_lap_brain](images/tb_lap_brain.png)
 
+---
+
 ### 3. Display driver - ([Display_driver](StopWatchDE1.srcs/sources_1/display_driver.vhd))
+
 ---
-popis
----
+
+semppopis
+
 ### Display_driver testbench
 ![tb_display_driver](images/tb_display_driver.png)
