@@ -34,7 +34,8 @@ Využívá 6 kaskádově zapojených čítačů counter vytvořených v rámci c
 
 ### Counter_core testbench
 ![tb_counter_core](images/tb_counter_core.png)
-
+Na obrázku je vidět simulace bloku, kde můžeme vidět počítání jednotlivých counterů. Pro setiny (h_set)je vidět, že pokaždé když dojdou do 9 zvýší se následující counter na desítky setin (t_set) o 1. Dále je na začátku grafu vidět, že v moment kdy tento counter dojde do 9 opět se counter následující (u_sec) zvedne o 1. 
+ 
 ---
 
 ### 2. Lap Brain - ([Lap_brain](StopWatchDE1.srcs/sources_1/lap_brain.vhd))
