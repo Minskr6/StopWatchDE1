@@ -68,5 +68,5 @@ Převádí signály z lap_brain na šest 7segmentových displejů, které se vel
 #### Display_driver testbench
 ![tb_display_driver](images/tb_display_driver.png)
 
-### Resource Report 
+### Resource Report: 
 ![LUT_tabulka](images/LUT_tabulka.png)
