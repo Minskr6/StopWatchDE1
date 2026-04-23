@@ -33,7 +33,7 @@ architecture Behavioral of counter_core is
     component counter is
         generic (
         G_BITS : positive;  --! Default number of bits
-        G_MAX : integer
+        G_MAX  : integer
     );
     port (
         clk : in  std_logic;                             --! Main clock
