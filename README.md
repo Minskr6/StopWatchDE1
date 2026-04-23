@@ -28,7 +28,7 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas s možností u
 
 --- 
 
-Využívá 6 kaskádově zapojených čítačů counter vytvořených v rámci cvičení, které čítají od 0 po 9 s výjimkou desítek minutek, která čítají pouze od 0 do 5. V momentě kdy čítač dosáhne 9 pošle enable signál na další counter v kaskádě, který se zvýší o 1. Výstupní signál tedy tvoří šest 4bitových signálů.
+Využívá 6 kaskádově zapojených čítačů counter vytvořených v rámci cvičení, které čítají od 0 po 9 s výjimkou desítek minut, která čítají pouze od 0 do 5. V momentě kdy čítač dosáhne 9 pošle enable signál na další counter v kaskádě, který se zvýší o 1. Výstupní signál tedy tvoří šest 4bitových signálů.
 
 
 
