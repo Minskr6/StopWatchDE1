@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
---  Název projektu: StopWatch (Digitální stopky)
+-- Název projektu:  StopWatch (Digitální stopky)
 -- Název souboru:   display_driver.vhd
 -- Autor:           Vocilka Jiří
 -- Deska:           FPGA Nexys A7 50T
