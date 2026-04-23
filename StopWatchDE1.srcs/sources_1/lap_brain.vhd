@@ -1,3 +1,13 @@
+----------------------------------------------------------------------------------
+-- Název projektu: StopWatch
+-- Název souboru:  lap_brain.vhd
+-- Autor:          [Tvarůžek Tomáš]
+-- Cíl (Target):   FPGA Nexys A7 50T
+--
+-- Popis: 
+-- Převodník binárního vstupu (4 bity) na 7-segmentový displej (hexadecimální).
+-- Výstupy (seg) odpovídají segmentům a-g, aktivní v log. 0 (společná anoda).
+----------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
