@@ -12,7 +12,7 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas s možností u
 * BTND - spuštění nebo zastavení stopek (Start/Stop)
 * BTNC - úplné vynulování (Reset)
 * BTNU - uložení aktuálního času
-* SW[0:5] - přepínání mezi zobrazením aktuálního času a uloženým časem
+* SW[5:0] - přepínání mezi zobrazením aktuálního času a uloženým časem
 
 ### Výstupy
 - zobrazení aktuálního času stopek
