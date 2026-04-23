@@ -21,11 +21,11 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas, s možností 
 ### Blokový diagram
 ![diagram](images/diagram4.png)
 
-### Testbench pro [Counter_core](StopWatchDE1.srcs/sources_1/counter_core.vhd)
+### 1.Counter [Counter_core](StopWatchDE1.srcs/sources_1/counter_core.vhd)
 ![tb_counter_core](images/tb_counter_core.png)
 
-### Testbench pro [Lap_brain](StopWatchDE1.srcs/sources_1/lap_brain.vhd)
+### 2.Lap Brain [Lap_brain](StopWatchDE1.srcs/sources_1/lap_brain.vhd)
 ![tb_lap_brain](images/tb_lap_brain.png)
 
-### Testbench pro [Display_driver](StopWatchDE1.srcs/sources_1/display_driver.vhd)
+### 3.Display driver [Display_driver](StopWatchDE1.srcs/sources_1/display_driver.vhd)
 ![tb_display_driver](images/tb_display_driver.png)
