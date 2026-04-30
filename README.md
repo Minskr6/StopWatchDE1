@@ -1,6 +1,8 @@
 # Projekt StopWatch
 Jedná se o stopky, které na displeji zobrazují aktuální čas s možností uložení a následného zobrazení  šesti mezičasů.
 
+## Video Demonstrace funkčnosti: 
+[StopWatchVideo](LINKVIDEA DEJ SEM!!!!)
 
 ## Spolupracovali:
 
