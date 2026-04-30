@@ -32,9 +32,12 @@ Projekt je navržen pro vývojovou desku **Nexys A7-50T**.
 
 ### Blokový diagram
 ![diagram](images/Diagram.png)
-## Popisy bloků:
 
----
+### Použité moduly ze cvičení: Debounce, Counter, Clk_en, Bin2seg
+
+## Popisy vlastních bloků:
+
+--- 
 
 ### 1. Counter_core - ([Counter_core](StopWatchDE1.srcs/sources_1/counter_core.vhd))
 
