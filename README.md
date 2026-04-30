@@ -33,7 +33,7 @@ Projekt je navržen pro vývojovou desku **Nexys A7-50T**.
 ### Blokový diagram
 ![diagram](images/Diagram.png)
 
-### Použité moduly ze cvičení: [Debounce](StopWatchDE1.srcs/sources_1/debounce.vhd), [Counter](StopWatchDE1.srcs/sources_1/Counter.vhd), [Clk_en](StopWatchDE1.srcs/sources_1/clk_en.vhd), [Bin2seg](StopWatchDE1.srcs/sources_1/bin2seg.vhd)
+### Použité moduly ze cvičení: [Debounce](StopWatchDE1.srcs/sources_1/debounce.vhd), [Counter](StopWatchDE1.srcs/sources_1/counter.vhd), [Clk_en](StopWatchDE1.srcs/sources_1/clk_en.vhd), [Bin2seg](StopWatchDE1.srcs/sources_1/bin2seg.vhd)
 
 ## Popisy vlastních bloků:
 
