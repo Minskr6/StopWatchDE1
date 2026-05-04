@@ -4,6 +4,10 @@ Jedná se o stopky, které na displeji zobrazují aktuální čas s možností u
 ## Video demonstrace funkčnosti: 
 [StopWatchVideo](https://youtu.be/KcD7gJXMx3k)
 
+## Plakát ke stažení:
+
+[StopWatch Plakát A3](Plakát%20Stopwatch.pdf?raw=true)
+
 ## Spolupracovali:
 
 * Truong Hong Minh
