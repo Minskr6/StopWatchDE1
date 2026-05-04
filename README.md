@@ -78,5 +78,7 @@ Převádí signály z lap_brain na šest 7segmentových displejů, které se vel
 ![tb_display_driver](images/tb_display_driver.png)
 Na obrázku je vidět manuálně nahraný čas 12:34:56 (h_set_in až t_min_in). Za žlutou čárou vidíme v řádku anode, že je aktivován první displej (11111110), na kterém má být vypsána 6. V řádku seg je vidět, že je zhasnut pouze segment b (0100000), což přesně odpovídá 6. V další části je aktivován druhý displej, kde má být zobrazena 5. V řádku seg vidíme, že jsou zhasnuty dva segmenty (0100100), což opět odpovídá požadované 5.
 
+---
 ### Resource Report: 
+---
 ![LUT_tabulka](images/LUT_tabulka.png)
