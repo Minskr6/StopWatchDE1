@@ -2,10 +2,10 @@
 Jedná se o stopky, které na displeji zobrazují aktuální čas s možností uložení a následného zobrazení  šesti mezičasů.
 
 ## Video demonstrace funkčnosti: 
-[StopWatchVideo](https://youtu.be/KcD7gJXMx3k)
+[StopWatch - Video](https://youtu.be/KcD7gJXMx3k)
 
 ## Plakát ke stažení:
-[A3 Plakát](Plakát%20Stopwatch.pdf?raw=true)
+[A3 Plakát Projektu](Plakát%20Stopwatch.pdf?raw=true)
 
 ## Spolupracovali:
 
