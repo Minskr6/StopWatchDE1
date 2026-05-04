@@ -2,7 +2,7 @@
 Jedná se o stopky, které na displeji zobrazují aktuální čas s možností uložení a následného zobrazení  šesti mezičasů.
 
 ## Video demonstrace funkčnosti: 
-[StopWatchVideo](LINKVIDEA DEJ SEM!!!!)
+[StopWatchVideo](https://youtu.be/hs9oEIFXQHg)
 
 ## Spolupracovali:
 
