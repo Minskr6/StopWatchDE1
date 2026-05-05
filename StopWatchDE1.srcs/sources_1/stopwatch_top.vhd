@@ -206,7 +206,7 @@ begin
             clk       => clk, 
             rst       => sig_rst_clean, 
             lap_time  => sig_lap_pulse, 
-            lap_mem   => sw,      -- Zatím poue sw0
+            lap_mem   => sw,
             h_set_in  => sig_live_h_set, 
             t_set_in  => sig_live_t_set, 
             u_sec_in  => sig_live_u_sec, 
